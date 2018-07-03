@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.ArmySOF" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="27" />
+	<!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+	<application android:label="ArmySOF" android:icon="@drawable/icon">
+	</application>
+</manifest>

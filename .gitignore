@@ -3,3 +3,11 @@
 ################################################################################
 
 /ArmySOF/.vs/ArmySOF/v15
+/ArmySOF/ArmySOF/ArmySOF.Android/bin/Debug
+/ArmySOF/ArmySOF/ArmySOF.Android/obj
+/ArmySOF/ArmySOF/ArmySOF.iOS/bin/iPhoneSimulator/Debug
+/ArmySOF/ArmySOF/ArmySOF.iOS/obj
+/Imagenes
+/Resources
+/armyLogo.png
+/Icon.png
