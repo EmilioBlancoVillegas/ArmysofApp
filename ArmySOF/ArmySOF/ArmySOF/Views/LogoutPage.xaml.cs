@@ -15,6 +15,7 @@ namespace ArmySOF.Views
 		public LogoutPage ()
 		{
 			InitializeComponent ();
+            Application.Current.MainPage = new LoginPage();
 		}
 	}
 }

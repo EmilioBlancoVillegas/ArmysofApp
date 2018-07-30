@@ -11,3 +11,9 @@
 /Resources
 /armyLogo.png
 /Icon.png
+**/.vs
+**/bin
+**/obj
+**/packages
+**/.log
+/ArmySOF/ArmySOF.Model

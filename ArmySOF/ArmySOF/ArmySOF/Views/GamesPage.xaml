@@ -7,11 +7,16 @@
         <ToolbarItem x:Name="tlbCreateGame" Text="+" Activated="TlbCreateGame_Activated"/>
 
     </ContentPage.ToolbarItems>
-    <ListView x:Name="gamesListView">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <TextCell Text="{Binding Name}" Detail="{Binding Place}" Tapped="TextCell_Tapped"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+    <ContentPage.Content>
+        <ScrollView>
+            <ListView x:Name="gamesListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Place}" Tapped="TextCell_Tapped"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>        
+    </ContentPage.Content>
+    
 </ContentPage>

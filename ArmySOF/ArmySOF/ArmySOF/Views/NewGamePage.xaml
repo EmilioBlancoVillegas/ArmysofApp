@@ -4,12 +4,20 @@
              x:Class="ArmySOF.Views.NewGamePage" 
              Title="Nueva Partida">
     <ContentPage.Content>
-        <StackLayout Margin="10, 10, 10, 0">
-            <Entry x:Name="txtName" Placeholder="Nombre de la partida"/>
-            <Entry x:Name="txtPlace" Placeholder="Lugar de la partida" />
-            <DatePicker x:Name="date" Format="dd/MM/yyyy"/>
-            <TimePicker x:Name="time" Format="HH:mm:ss"/>
-            <Button Text="Crear Partida" Clicked="Button_Clicked"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Margin="10, 30, 10, 0">
+                <Label Text="Titulo"/>
+                <Entry x:Name="txtName"/>
+                <Label Text="Lugar"/>
+                <Entry x:Name="txtPlace" />
+                <Label Text="Guión"/>
+                <Editor x:Name="txtScript" HeightRequest="150"/>
+                <Label Text="Fecha"/>
+                <DatePicker x:Name="date" Format="dd/MM/yyyy"/>
+                <Label Text="Hora"/>
+                <TimePicker x:Name="time" Format="HH:mm"/>
+                <Button Text="Crear Partida" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </ScrollView>       
     </ContentPage.Content>
 </ContentPage>

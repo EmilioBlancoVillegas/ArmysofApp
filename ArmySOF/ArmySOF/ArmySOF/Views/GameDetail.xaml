@@ -1,16 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ArmySOF.Views.GameDetail">
+             x:Class="ArmySOF.Views.GameDetail"
+             Title="{Binding Name}">
     <ContentPage.Content>
-        <Grid RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="AUTO"/>
-                <RowDefinition Height="AUTO"/>
-                <RowDefinition Height="AUTO"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="AUTO"/>
-            </Grid.RowDefinitions>
-        </Grid>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Margin="30, 40" x:Name="stckLayoutDetails" >
+                <Label Text="Titulo de la partida:" Margin="0, 0, 0, 10" Font="Bold"/>
+                <Label Text="{Binding Name}" Margin="15, 0, 0, 10"  />
+                <Label Text="Localización:" Margin="0, 0, 0, 10"  Font="Bold"/>
+                <Label Text="{Binding Place}" Margin="15, 0, 0, 10" />
+                <Label Text="Guión:" Margin="0, 0, 0, 10"  Font="Bold"/>
+                <Label Text="{Binding Script}" VerticalOptions="Center" Margin="15, 0, 0, 10"/>
+                <Label Text="Fecha:" Margin="0, 0, 0, 10"  Font="Bold"/>
+                <Label Text="{Binding Date}" Margin="15, 0, 0, 10"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnGo" Text="Me Apunto" Clicked="btnGo_Clicked" Grid.Row="0" Grid.Column="0"/>
+                    <Button x:Name="btnTemporal" Text="Confirmaré" Clicked="btnTemporal_Clicked" Grid.Row="0" Grid.Column="1"/>
+                </Grid>                
+            </StackLayout>
+            
+        </ScrollView>        
     </ContentPage.Content>
 </ContentPage>

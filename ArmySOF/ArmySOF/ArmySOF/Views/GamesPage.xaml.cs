@@ -42,7 +42,12 @@ namespace ArmySOF.Views
         private void TextCell_Tapped(object sender, EventArgs e)
         {
             TextCell cell = (TextCell)sender;
-            DisplayAlert("Tapped", $"Text: {cell.Text}\nDetail:{cell.Detail}", "OK");
+            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DB_PATH))
+            {
+                Game g = conn.Table<Game>().Where(x => x.Name == cell.Text).FirstOrDefault();
+                if (g != null)
+                    Navigation.PushAsync(new GameDetail(g));
+            }
         }
     }
 }

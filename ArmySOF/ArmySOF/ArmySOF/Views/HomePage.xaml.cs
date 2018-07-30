@@ -15,6 +15,22 @@ namespace ArmySOF.Views
 		public HomePage ()
 		{
 			InitializeComponent ();
-		}
-	}
+            webView.Source = "http://www.armysof.es/";
+
+        }
+
+        private void BackButton_Clicked(object sender, EventArgs e)
+        {
+            if (webView.CanGoBack)
+                webView.GoBack();
+            else
+                this.Navigation.PopAsync();
+        }
+
+        private void ForwardButton_Clicked(object sender, EventArgs e)
+        {
+            if (webView.CanGoForward)
+                webView.GoForward();            
+        }
+    }
 }

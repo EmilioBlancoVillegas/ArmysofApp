@@ -4,10 +4,12 @@
              x:Class="ArmySOF.Views.SettingsPage" 
              Title="Ajustes">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Ajustes de la app"
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Ajustes de la app"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>        
     </ContentPage.Content>
 </ContentPage>

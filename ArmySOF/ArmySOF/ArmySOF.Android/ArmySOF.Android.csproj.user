@@ -4,5 +4,6 @@
     <SelectedDevice>Xiaomi MI 5s Plus</SelectedDevice>
     <ProjectView>ProjectFiles</ProjectView>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault.NoActionBar.Fullscreen</AndroidDesignerPreferredTheme>
+    <DefaultDevice>Android_Accelerated_x86_Oreo</DefaultDevice>
   </PropertyGroup>
 </Project>

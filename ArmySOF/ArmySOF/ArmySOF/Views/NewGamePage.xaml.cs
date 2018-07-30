@@ -22,6 +22,7 @@ namespace ArmySOF.Views
         {
             string name = txtName.Text;
             string place = txtPlace.Text;
+            string script = txtScript.Text;
             DateTime dt = DateTime.UtcNow;
             DateTime datePicked = date.Date;
             TimeSpan timePicked = time.Time;
@@ -31,6 +32,7 @@ namespace ArmySOF.Views
                 Name = name,
                 Place = place,
                 Date = finalDate,
+                Script = script,
             };
 
             using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DB_PATH))

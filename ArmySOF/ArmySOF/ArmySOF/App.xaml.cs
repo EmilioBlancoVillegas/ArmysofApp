@@ -1,3 +1,4 @@
+using ArmySOF.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,7 @@ namespace ArmySOF
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+            MainPage = new LoginPage();
 		}
 
         public App(string DB_Path)
@@ -21,7 +22,7 @@ namespace ArmySOF
 
             DB_PATH = DB_Path;
 
-            MainPage = new MainPage();
+            MainPage = new LoginPage();
         }
 
 		protected override void OnStart ()

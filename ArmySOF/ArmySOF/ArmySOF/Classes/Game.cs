@@ -11,6 +11,7 @@ namespace ArmySOF.Classes
         public int Id { get; set; }
         public string Name { get; set; }
         public string Place { get; set; }
+        public string Script { get; set; }
         public DateTime Date { get; set; }
     }
 }
